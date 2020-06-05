@@ -116,7 +116,6 @@ li {
 
 .text a {
 	background-color: white;
-	color: black;
 	padding: 10px;
 	border-radius: 100%;
 	margin-top: 20px;
@@ -220,14 +219,20 @@ iframe {
 	margin: auto;
 }
 
-a:link,
-a:visited {
+.header a:link,
+.header a:visited {
 	text-decoration: none;
-	color:white ;
+	color: white;
 }
 
-a:hover {
+.header a:hover {
 	color: blue;
+}
+
+.specialtext:link,
+.specialtext:visited {
+	text-decoration: none;
+	color: black;
 }
 
 a.notpage {
