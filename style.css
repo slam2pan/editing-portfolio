@@ -44,7 +44,7 @@ header, footer, main, nav, section, div {
 }
 
 header {
-	background-color: #466995;
+	background-color: #466995; /* blue */
 	position: fixed;
 	width: 100%;
 	z-index: 10; 
@@ -67,6 +67,29 @@ p {
 	text-align: right;
 	display: block;
 }
+
+.header a:link,
+.header a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.header a:hover {
+	color: blue;
+}
+
+.specialtext:link,
+.specialtext:visited {
+	text-decoration: none;
+	color: black;
+}
+
+/* theres gotta be a better way than this ... */
+
+a.notpage {
+	opacity: 0.5;
+}
+
 
 li {
 	display: inline-block;
@@ -166,10 +189,12 @@ a img {
 	margin-bottom: 20px;
 }
 
+/* store  label heads */
+
 .sect {
 	display: block;
 	width: 100%;
-	background-color: #87cefa;
+	background-color: #87cefa; /* light blue */
 	padding: 50px 0;
 	margin-bottom: 30px;
 }
@@ -212,7 +237,7 @@ a img {
 }
 
 .sub {
-	background-color: #fff9f2;
+	background-color: #fff9f2; /* pale */
 	position: relative;
 	width: 40%;
 	height: 300px;
@@ -234,27 +259,6 @@ a img {
 	margin-bottom: 20px;
 }
 
-
-.header a:link,
-.header a:visited {
-	text-decoration: none;
-	color: white;
-}
-
-.header a:hover {
-	color: blue;
-}
-
-.specialtext:link,
-.specialtext:visited {
-	text-decoration: none;
-	color: black;
-}
-
-a.notpage {
-	opacity: 0.5;
-}
-
 @media {
     .video{
     	display: inline-block;
@@ -264,4 +268,43 @@ a.notpage {
         padding-bottom: 10px;
         margin: 0 3vw;
     }
+}
+
+/* For Javascript */
+
+.buttons {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+button {
+	text-align: center;
+	border-radius: 100%;
+	border: none;
+	text-decoration: none;
+	font-family: Montserrat, sans-serif;
+	padding: 10px 10px;
+	margin: 0 10px;
+	background-color: white;
+	border: 2px solid #0099cc; /* blue */
+	transition-duration: 0.4s;
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #0099cc; /* blue */
+}
+
+button:active {
+	transform: translateY(3px);
+}
+
+#Montages {
+	display: block;
+}
+
+#IRL {
+	display: none;
 }
