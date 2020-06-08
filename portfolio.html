@@ -4,6 +4,7 @@
   <head>
   	<title>Portfolio</title>
   	<link rel="stylesheet" type="text/css" href="style.css">
+  	<script type="text/javascript" src="func.js"></script>
   </head>
   <body>
   	<header>
@@ -29,16 +30,24 @@
   		</div>
   		<div class="portfolio">
   			<div class="standard">
-		  		<h3>Gaming Montages</h3>
-		  	  <p>These are fully edited videos to showcase my best skills as an editor while presenting some of the most best footage in the given game. Making these is my biggest joy at the moment.</p>
-		  	  <div class="vidFrame">
-		  	  	<div class="video">
-			  	  	<iframe width="384" height="216" src="https://www.youtube.com/embed/xrKK_5Ao7dY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			  	  </div>
-			  	  <div class="video">
-			  	  	<iframe width="384" height="216" src="https://www.youtube.com/embed/Lie6nhtF9s0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			  	  </div>
-			  	</div>
+  				<div class="buttons">
+		  			<button onclick="montageFunc()">Gaming Montages</button>
+		  			<button onclick="IRLFunc()">IRL Edits</button>
+		  		</div>
+		  		<div id="Montages">
+			  	  <p>These are fully edited videos to showcase my best skills as an editor while presenting some of the most best footage in the given game. Making these is my biggest joy at the moment.</p>
+			  	  <div class="vidFrame">
+			  	  	<div class="video">
+				  	  	<iframe width="384" height="216" src="https://www.youtube.com/embed/xrKK_5Ao7dY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  	  </div>
+				  	  <div class="video">
+				  	  	<iframe width="384" height="216" src="https://www.youtube.com/embed/Lie6nhtF9s0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  	  </div>
+				  	</div>
+				  </div>
+				  <div id="IRL">
+				  	<p>These videos show my ability to edit real life footage. My work in this aspect comes from being the Videographer in my school's club.</p>
+				  </div>
 			  </div>
 		  </div>
 
